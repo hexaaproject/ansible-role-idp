@@ -3,13 +3,11 @@
 - name: Start docker container
   docker_container:
     name: "{{ CONTAINER_NAME }}"
-    image: kristophjunge/test-saml-idp
+    image: szabogyula/test-saml-idp
     state: started
     pull: true
     restart: true
     restart_policy: unless-stopped
     env:
-      VIRTUAL_HOST:                                "{{ VIRTUAL_HOST }}"
-      SIMPLESAMLPHP_SP_ENTITY_ID:                  "{{ SIMPLESAMLPHP_SP_ENTITY_ID }}"
-      SIMPLESAMLPHP_SP_ASSERTION_CONSUMER_SERVICE: "{{ SIMPLESAMLPHP_SP_ASSERTION_CONSUMER_SERVICE }}"
-      SIMPLESAMLPHP_SP_SINGLE_LOGOUT_SERVICE:      "{{ SIMPLESAMLPHP_SP_SINGLE_LOGOUT_SERVICE }}"
+      VIRTUAL_HOST: "{{ VIRTUAL_HOST }}"
+      MDX_URL:      "{{ MDX_URL }}"
