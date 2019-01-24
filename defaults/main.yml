@@ -1,5 +1,5 @@
 ---
 # defaults file for ansible-role-idp
 VIRTUAL_HOST: idp
-MDX_URL: https://mdx.eduid.hu/entities/
+MDX_URL: "{{ IDP_MDX_URL }}"
 CONTAINER_NAME: "{{ VIRTUAL_HOST }}"
