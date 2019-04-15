@@ -1,12 +1,9 @@
-Role Name
+ansible-role-idp
 =========
 
-A brief description of the role goes here.
+Install and run a simpleSAMLphp idp docker container with two demo user.
 
-Requirements
-------------
-
-Any pre-requisites that may not be covered by Ansible itself or the role should be mentioned here. For instance, if the role uses the EC2 module, it may be a good idea to mention in this section that the boto package is required.
+https://github.com/szabogyula/docker-test-saml-idp
 
 Role Variables
 --------------
@@ -30,9 +27,12 @@ Including an example of how to use your role (for instance, with variables passe
 License
 -------
 
-BSD
+GPLv3
 
 Author Information
 ------------------
 
-An optional section for the role authors to include contact information, or a website (HTML is not allowed).
+Gyula Szabó
+gyufi@sztaki.hu
+gyufi@szabocsalad.com
+https://github.com/szabogyula
