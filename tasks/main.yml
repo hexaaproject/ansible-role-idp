@@ -10,6 +10,7 @@
     restart_policy: unless-stopped
     env:
       VIRTUAL_HOST: "{{ VIRTUAL_HOST }}"
+      LETSENCRYPT_HOST: "{{ VIRTUAL_HOST }}"
       MDX_URL:      "{{ MDX_URL }}"
       SIMPLESAMLPHP_ADMIN_PASSWORD: "{{ SIMPLESAMLPHP_ADMIN_PASSWORD }}"
       SIMPLESAMLPHP_SECRET_SALT:    "{{ SIMPLESAMLPHP_SECRET_SALT }}"
